@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php if (isset($error)) echo "<p class='error'>$error</p>"; ?>
     <form method="POST" action="">
         <label for="nombre"><strong>Nombre de Usuario:</strong></label>
-        <input type="text" name="nombre" id="nombre" value="admin" readonly>
+        <input type="text" name="nombre" id="nombre" placeholder="Introduzca un usuaerio" required>
         <label for="pass"><strong>Contraseña:</strong></label>
         <input type="password" name="pass" id="pass" placeholder="Introduce tu contraseña" required>
         <div class="form-buttons">
